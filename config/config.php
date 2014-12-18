@@ -16,7 +16,7 @@
  * Extension version
  */
 @define('MEMBER_CONTENT_VERSION', '1.0');
-@define('MEMBER_CONTENT_BUILD', '0');
+@define('MEMBER_CONTENT_BUILD', '1');
 
 
 /**
