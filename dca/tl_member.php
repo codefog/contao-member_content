@@ -15,9 +15,9 @@
 /**
  * Add operations to tl_member
  */
-$GLOBALS['TL_DCA']['tl_member']['list']['operations']['content'] = array
+$GLOBALS['TL_DCA']['tl_member']['list']['operations']['member_content'] = array
 (
-    'label'               => &$GLOBALS['TL_LANG']['tl_member']['content'],
+    'label'               => &$GLOBALS['TL_LANG']['tl_member']['member_content'],
     'href'                => 'table=tl_content',
     'icon'                => 'article.gif'
 );
