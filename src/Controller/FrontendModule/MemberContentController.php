@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Codefog\MemberContentBundle\Controller\FrontendModule;
 
 use Contao\ContentModel;

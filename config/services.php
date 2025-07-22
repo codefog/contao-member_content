@@ -6,7 +6,6 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $services = $containerConfigurator->services();
-
     $services
         ->defaults()
         ->autoconfigure()
@@ -14,8 +13,8 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     ;
 
     $services
-        ->load('Codefog\\MemberContentBundle\\', __DIR__ . '/../src')
-        ->exclude(__DIR__ . '/../src/ContaoManager')
-        ->exclude(__DIR__ . '/../src/DependencyInjection')
+        ->load('Codefog\\MemberContentBundle\\', __DIR__.'/../src')
+        ->exclude(__DIR__.'/../src/ContaoManager')
+        ->exclude(__DIR__.'/../src/DependencyInjection')
     ;
 };

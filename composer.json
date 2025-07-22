@@ -15,7 +15,8 @@
         "contao/core-bundle": "^5.3"
     },
     "require-dev": {
-        "contao/manager-plugin": "^2.0"
+        "contao/manager-plugin": "^2.0",
+        "terminal42/contao-build-tools": "@dev"
     },
     "autoload": {
         "psr-4": {
@@ -27,7 +28,8 @@
     },
     "config": {
         "allow-plugins": {
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "terminal42/contao-build-tools": true
         }
     }
 }
