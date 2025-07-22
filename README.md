@@ -6,8 +6,8 @@
 
 Member Content is an extension for the [Contao Open Source CMS](https://contao.org).
 
-Display the individual member content using a front end module. This extension allows to add content elements per 
-member in the `Members` module and then display them on the website for currently logged in user.
+This extension allows you to assign content elements to individual front end members via the "Members" module. A dedicated front end module is available to display this content on the website — visible only to the currently logged-in user. 
+This enables personalized content delivery for registered users.
 
 ![](docs/images/preview.png)
 

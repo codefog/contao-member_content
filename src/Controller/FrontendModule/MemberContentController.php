@@ -27,7 +27,7 @@ class MemberContentController extends AbstractFrontendModuleController
 
         if (($contentModels = ContentModel::findPublishedByPidAndTable($user->id, 'tl_member')) !== null) {
             foreach ($contentModels as $contentModel) {
-                $elements[] = Controller::getContentElement($contentModel->id, $template->inColumn);
+                $elements[] = Controller::getContentElement($contentModel->id);
             }
         }
 

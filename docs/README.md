@@ -1,12 +1,13 @@
 # Member Content – Documentation
 
-## Adding content
+## Adding Content
 
-The individual content for each member can be added in the `Members module`. Use the last icon in the row of each entry 
-to access the content view. You can add as many as different content elements as you like, just like for articles, 
-news or events.
+To add individual content for a member, open the "Members" module in the Contao back end. Click the edit children icon for the desired member to access their personal content view.
 
-Then create a new front end module of type `Member content` and place it on the protected page. 
-It will display the content specific for the currently logged in user.
+![](images/preview.png)
 
-![](images/member_1.png)
+You can add any number of content elements here — just as you would for articles, news, or events.
+
+![](images/content_elements.png)
+
+Next, create a new front end module of type "Member content" and place it on a protected page. When a user logs in, the module will render the content assigned specifically to them.
