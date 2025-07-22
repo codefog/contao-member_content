@@ -2,23 +2,34 @@
     "name": "codefog/contao-member_content",
     "description": "member_content extension for Contao Open Source CMS",
     "keywords": ["contao", "member", "content"],
-    "type": "contao-module",
-    "license": "LGPL-3.0+",
+    "type": "contao-bundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Codefog",
-            "homepage": "http://codefog.pl"
+            "homepage": "https://codefog.pl"
         }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "contao/core-bundle": "^4.9"
+        "php": "^8.1",
+        "contao/core-bundle": "^5.3"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "terminal42/contao-build-tools": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codefog\\MemberContentBundle\\": "src"
+        }
     },
     "extra": {
-        "contao": {
-            "sources": {
-                "": "system/modules/member_content"
-            }
+        "contao-manager-plugin": "Codefog\\MemberContentBundle\\ContaoManager\\Plugin"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "terminal42/contao-build-tools": true
         }
     }
 }

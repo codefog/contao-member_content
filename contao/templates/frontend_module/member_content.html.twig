@@ -1,0 +1,7 @@
+{% extends "@Contao/frontend_module/_base.html.twig" %}
+
+{% block content %}
+    {% for element in elements %}
+        {{ element|insert_tag|raw }}
+    {% endfor %}
+{% endblock %}
